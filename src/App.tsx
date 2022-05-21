@@ -7,9 +7,9 @@ import Projects from "./Projects/Projects";
 
 function App() {
     return (
-        <div className="flex flex-col items-center justify-center text-center">
+        <div className="grid grid-cols-side-nav">
             <Header/>
-            <main>
+            <main className="ml-2 text-center">
                <Routes>
                    <Route path="/" element={<Home/>}/>
                    <Route path="/projects" element={<Projects/>}/>
